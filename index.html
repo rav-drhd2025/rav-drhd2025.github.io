@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Старт нового дня с правильным настроем">
+    <title>Начни свой день вкусно</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #625068 0%, #343c4c 30%, #3f3248 70%, #535464 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: clamp(2rem, 8vw, 4rem);
+            color: #b19cd9;
+            margin: 2rem 0;
+            font-family: 'Kablammo', cursive;
+            text-transform: uppercase;
+            animation: titleGlow 2s ease-in-out infinite alternate;
+            line-height: 1.2;
+            padding: 0 20px;
+        }
+
+        .neon-link {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .neon-link:hover {
+            transform: scale(1.02);
+        }
+
+        .neon-image {
+            max-width: 600px;
+            width: 90%;
+            height: auto;
+            margin: 2rem auto;
+            animation: imageGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% {
+                text-shadow: 
+                    0 0 5px #6c5ce7,
+                               }
+            50% {
+                text-shadow: 
+                    0 0 20px #6c5ce7,
+                
+                    
+            }
+            100% {
+                text-shadow: 
+                   
+                    0 0 20px #6c5ce7,
+                    0 0 30px #6c5ce7;
+            }
+        }
+
+        @keyframes imageGlow {
+            0% {
+                filter: 
+                    drop-shadow(0 0 5px #6c5ce7)
+                   
+            }
+            50% {
+                filter: 
+                   
+                    drop-shadow(0 0 25px #6c5ce7)
+                    
+            }
+            100% {
+                filter: 
+                    drop-shadow(0 0 10px #6c5ce7)
+                    
+                    drop-shadow(0 0 30px #6c5ce7);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-title {
+                margin: 1rem 0;
+            }
+            .neon-image {
+                max-width: 400px;
+                margin: 1rem auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .neon-image {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="site-title">начни свой день вкусно</h1>
+    
+    <a href="C:\Users\Пользователь\Desktop\index.html" class="neon-link">
+        <img src="https://s2.radikal.cloud/2025/03/07/AddText_03-07-01.00.334e1b09ed6158c045.png" 
+             alt="Перейти к коллекции сиропов" 
+             class="neon-image">
+    </a>
+
+</body>
+</html>
+
+    
+   
