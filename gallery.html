@@ -145,32 +145,6 @@
             backdrop-filter: blur(10px);
             color: #333;
         }
-		
-		@media (max-width: 768px) {
-			.thumbnail.active {
-			top: 40%;
-			transform: translate(-50%, -55%);
-			max-height: 60vh;
-    }
-	 .description-box {
-        width: 80%;
-        bottom: 3%;
-    }
-}
-
-@media (max-width: 480px) {
-    .thumbnail.active {
-        top: 35%;
-        transform: translate(-50%, -50%);
-        max-height: 50vh;
-    }
-    
-    .description-box {
-        width: 90%;
-        padding: 15px;
-        font-size: 0.9rem;
-    }
-}
 
         .description-box.active {
             opacity: 1;
@@ -226,18 +200,46 @@
                 font-size: 1.2rem;
                 padding: 3px 20px;
             }
+			
+			.thumbnail.active {
+				top: 40%;
+				transform: translate(-50%, -55%);
+				max-height: 60vh;
+			}
+			
+			.description-box {
+				width: 80%;
+				bottom: 3%;
+			}
         }
 
         @media (max-width: 480px) {
             .syrup-year {
                 font-size: 0.8rem;
                 padding: 1px 10px;
+				top: 70px;
             }
             
             .thumbnail.active .syrup-year {
                 font-size: 1rem;
                 padding: 2px 15px;
             }
+			
+			.thumbnail.active {
+				top: 35%;
+				transform: translate(-50%, -50%);
+				height: 80vh;
+			}
+    
+			.description-box {
+				width: 90%;
+				padding: 15px;
+				font-size: 0.9rem;	
+			}
+			
+			.description-box p {
+				font-size: 0.9rem;
+			}
         }
     </style>
 </head>
@@ -306,7 +308,7 @@
    <div class="thumbnail">
                 <div class="syrup-year">#2013 год</div>
                 <img src="img\11_ministry.png" alt="Офис" loading="lazy">
-                <div class="description">«Министерство — мой враг. Но как выяснилось, Министерство — свой собственный худший враг. А враг моего врага — мой друг. Так что Министерство — по сути мой друг. Но потому что оно враг самому себе, а враг моего друга — мой враг, то выходит, что Министерство мой враг. Но...» (с) Офис (The Office)></div>
+                <div class="description">«Министерство — мой враг. Но как выяснилось, Министерство — свой собственный худший враг. А враг моего врага — мой друг. Так что Министерство — по сути мой друг. Но потому что оно враг самому себе, а враг моего друга — мой враг, то выходит, что Министерство мой враг. Но...» (с) Офис (The Office)</div>
             </div>
             <!-- Остальные элементы левой колонки... -->
         </div>
