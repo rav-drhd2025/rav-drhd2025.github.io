@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Коллекция эксклюзивных сиропов для ваших напитков">
+    <meta name="description" content="Коллекция эксклюзивных сиропов для ваших напиток">
     <title>Сиропы | Галерея</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap">
     <style>
@@ -90,12 +90,12 @@
 
         .thumbnail.active {
             position: fixed;
-            top: 50%;
+            top: 45%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -60%);
             z-index: 1002;
             max-width: 90vw;
-            max-height: 90vh;
+            max-height: 70vh;
             background: transparent;
             border: none;
             box-shadow: none;
@@ -128,7 +128,7 @@
 
         .description-box {
             position: fixed;
-            bottom: 20px;
+            bottom: 5%;
             left: 50%;
             transform: translateX(-50%);
             width: 60%;
@@ -137,13 +137,39 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            z-index: 1003;
+            z-index: 1004;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             color: #333;
         }
+		
+		@media (max-width: 768px) {
+			.thumbnail.active {
+			top: 40%;
+			transform: translate(-50%, -55%);
+			max-height: 60vh;
+    }
+	 .description-box {
+        width: 80%;
+        bottom: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail.active {
+        top: 35%;
+        transform: translate(-50%, -50%);
+        max-height: 50vh;
+    }
+    
+    .description-box {
+        width: 90%;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
 
         .description-box.active {
             opacity: 1;
@@ -157,35 +183,36 @@
             text-align: center;
         }
 
-          .syrup-year {
+        .syrup-year {
             position: absolute;
             top: 40px;
             left: 15px;
             transform: rotate(-90deg) translateX(-30%);
-            color: #D1BB61; /* Горчица цвет текста */
-            font-family: 'Arial', sans-serif; /* Новый шрифт */
+            color: #D1BB61;
+            font-family: 'Arial', sans-serif;
             font-size: 1.1rem;
-            font-weight: 700; /* Полужирное начертание */
+            font-weight: 700;
             z-index: 1;
-            background: #8361d1; /* Сиреневый фон */
+            background: #8361d1;
             padding: 3px 25px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень для контраста */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             white-space: nowrap;
             transform-origin: 0 0;
-            letter-spacing: 0.5px; /* Увеличим расстояние между буквами */
+            letter-spacing: 0.5px;
         }
 
-        .thumbnail.active .syrup-year {
-            z-index: 1005;
-            top: 70px;
-            left: 30px;
-            font-size: 1.8rem;
-            background: #8361d1; /* Более насыщенный желтый */
-            padding: 5px 35px;
-            transform: rotate(-90deg) translateX(-25%);
-            border: 2px solid #2d3436; /* Темная обводка */
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        .syrup-name {
+            font-family: 'Kablammo', cursive;
+            font-size: 1.2em;
+            color: #6c5ce7;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .description-box .syrup-name {
+            font-size: 1.3em;
+            color: #8361d1;
         }
 
         @media (max-width: 768px) {
@@ -219,131 +246,148 @@
     <div class="gallery">
         <!-- Левая колонка -->
         <div class="column">
+            <!-- Все элементы левой колонки -->
             <div class="thumbnail">
                 <div class="syrup-year">#2002 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/1_gryff90d81ac20d5fd189.png" alt="Вишня + Чили перец" loading="lazy">
-                <div class="description">Риск - благородное дело. Чтобы не упустить редкую возможность, нужно обладать отчаянной смелостью и не избегать активных действий. </div>
+                <img src="C:\Users\Пользователь\Desktop\drhd2025\img\1_griffyndor.png" alt="va banque" loading="lazy">
+                <div class="description">Риск - благородное дело. Чтобы не упустить редкую возможность, нужно обладать отчаянной смелостью и не избегать активных действий.</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2003 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/326836d70f5e07a94.png" alt="Шоколадный сироп" loading="lazy">
-                <div class="description">Густой бельгийский шоколад</div>
+                <img src="C:\Users\Пользователь\Desktop\drhd2025\img\2_slytherin.png" alt="Изумрудный шелк" loading="lazy">
+                <div class="description">Настоящее искусство - это наслаждаться жизнью и теми благами, которые она может тебе предоставить. Или немного о том, чем ты готов поделиться с окружающими.</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2004 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/4b3fb62d87448c64a.png" alt="Карамельный сироп" loading="lazy">
-                <div class="description">Золотистая карамель с морской солью</div>
+                <img src="C:\Users\Пользователь\Desktop\drhd2025\img\3_hufflepuff.png" alt="В стиле хюгге" loading="lazy">
+                <div class="description">Что такое благополучие? Ощущение в моменте: спокойствие, наслаждение простыми вещами и радость общения с теми, кто тебя принимает и ценит. </div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2005 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/6a4a14b82736158e3.png" alt="Мятный сироп" loading="lazy">
-                <div class="description">Освежающая мята с кристаллами сахара</div>
+                <img src="C:\Users\Пользователь\Desktop\drhd2025\img\4_raven.png" alt="Прогулка по облакам" loading="lazy">
+                <div class="description">Эксперименты - это хорошо. Особенно, когда свободное мышление и творческий талант помогают реализовать во внешнем мире то, что пока существует только в твоих мыслях.</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2006 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/905a4e682fc188468.png" alt="Кокосовый сироп" loading="lazy">
-                <div class="description">Тропический кокос с молочными нотками</div>
+                <img src="C:\Users\Пользователь\Desktop\drhd2025\img\5_podgot.png" alt="Своя волна" loading="lazy">
+                <div class="description">Что может быть ценнее, чем способность мастерски ориентироваться в новом пространстве и определять верный путь, слушая собственное сердце?</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2007 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/1753deef6de30dc9f8.png" alt="Ванильный сироп" loading="lazy">
-                <div class="description">Мадагаскарская ваниль в карамели</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2008 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/192a48724260f4ce35.png" alt="Лимонный сироп" loading="lazy">
-                <div class="description">Цитрусовый микс с цедрой лимона</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2009 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/2afcf26396ce63117.png" alt="Малиновый сироп" loading="lazy">
-                <div class="description">Ягоды малины в сахарном сиропе</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
             </div>
-            <div class="thumbnail">
+   <div class="thumbnail">
                 <div class="syrup-year">#2010 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/53c1ecf78fb324adc.png" alt="Имбирный сироп" loading="lazy">
-                <div class="description">Пряный имбирь с лимонной цедрой</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
             </div>
+   <div class="thumbnail">
+                <div class="syrup-year">#2002 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
+            </div>
+   <div class="thumbnail">
+                <div class="syrup-year">#2002 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
+            </div>
+   <div class="thumbnail">
+                <div class="syrup-year">#2002 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/06/235deee053abfe3885.png" alt="Клубничный сироп" loading="lazy">
+                <div class="description">Натуральная клубника с нотками ванили</div>
+            </div>
+            <!-- Остальные элементы левой колонки... -->
         </div>
 
         <!-- Правая колонка -->
         <div class="column">
+            <!-- Все элементы правой колонки -->
             <div class="thumbnail">
                 <div class="syrup-year">#2011 год</div>
                 <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
                 <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2012 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/8bc34ee5c5124a36f.png" alt="Фисташковый сироп" loading="lazy">
-                <div class="description">Нежный вкус жареной фисташки</div>
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2013 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/1052b321067c12f77e.png" alt="Голубичный сироп" loading="lazy">
-                <div class="description">Лесные ягоды с цветочным послевкусием</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2014 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/110df6f571395f2918.png" alt="Пряный сироп" loading="lazy">
-                <div class="description">Смесь кардамона, корицы и мускатного ореха</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2015 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/12363504bd5f3ca58b.png" alt="Манговый сироп" loading="lazy">
-                <div class="description">Спелое манго с тропическими нотками</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2016 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/13cf3d228ead9ef6a0.png" alt="Медовый сироп" loading="lazy">
-                <div class="description">Цветочный мед с липовыми сотами</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2017 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/14a178e7a4758f7667.png" alt="Киви сироп" loading="lazy">
-                <div class="description">Экзотический киви с зеленым яблоком</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2018 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/151348a9e22f9cce75.png" alt="Лавандовый сироп" loading="lazy">
-                <div class="description">Аромат прованской лаванды</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2019 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/160853304244dc7055.png" alt="Персиковый сироп" loading="lazy">
-                <div class="description">Сочный персик с ванильным кремом</div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
             </div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
+            </div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
+            </div>
+
+ <div class="thumbnail">
+                <div class="syrup-year">#2011 год</div>
+                <img src="https://s2.radikal.cloud/2025/03/07/7b49c85338b7d434b.png" alt="Мокка сироп" loading="lazy">
+                <div class="description">Арабика с шоколадными нотами</div>
+            </div>
+
+            <!-- Остальные элементы правой колонки... -->
         </div>
 
-        <!-- Нижний ряд -->
-        <div class="bottom-row">
-            <div class="thumbnail">
-                <div class="syrup-year">#2020 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/1832d90c19ab89f33e.png" alt="Кленовый сироп" loading="lazy">
-                <div class="description">Классический канадский кленовый сироп</div>
-            </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2021 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/21f4268bab0781a2d6.png" alt="Апельсиновый сироп" loading="lazy">
-                <div class="description">Апельсиновая цедра с корицей</div>
-            </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2022 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/224784eb35b04b50eb.png" alt="Кофейный сироп" loading="lazy">
-                <div class="description">Эспрессо с нотками темного шоколада</div>
-            </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2023 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/224784eb35b04b50eb.png" alt="Гранатовый сироп" loading="lazy">
-                <div class="description">Сладко-кислый гранат с вишней</div>
-            </div>
-            <div class="thumbnail">
-                <div class="syrup-year">#2024 год</div>
-                <img src="https://s2.radikal.cloud/2025/03/07/224784eb35b04b50eb.png" alt="Клюквенный сироп" loading="lazy">
-                <div class="description">Кислинка клюквы с медовым послевкусием</div>
-            </div>
-        </div>
-    </div>
+           </div>
 
     <div class="overlay"></div>
     <div class="description-box">
@@ -351,6 +395,20 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                const img = thumb.querySelector('img');
+                const altText = img.getAttribute('alt');
+                const desc = thumb.querySelector('.description');
+                if (desc && !desc.querySelector('.syrup-name')) {
+                    const nameSpan = document.createElement('span');
+                    nameSpan.className = 'syrup-name';
+                    nameSpan.textContent = altText + ': ';
+                    desc.insertBefore(nameSpan, desc.firstChild);
+                }
+            });
+        });
+
         const toggleGallery = (() => {
             const thumbs = document.querySelectorAll('.thumbnail');
             const overlay = document.querySelector('.overlay');
@@ -367,8 +425,8 @@
                 
                 if (thumb && !isActive) {
                     thumb.classList.add('active');
-                    const description = thumb.querySelector('.description').textContent;
-                    descriptionText.textContent = description;
+                    const description = thumb.querySelector('.description').innerHTML;
+                    descriptionText.innerHTML = description;
                     descriptionBox.classList.add('active');
                 }
             };
