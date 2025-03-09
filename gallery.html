@@ -8,6 +8,11 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap">
     <style>
+		@font-face {
+			font-family: BirdyRUS;
+			src: url("fonts/Birdy RUS.otf");
+		}
+	
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -240,7 +245,21 @@
 			.description-box p {
 				font-size: 0.9rem;
 			}
+			
         }
+		
+			.footer {
+				justify-content: center;
+				max-width: 1200px;
+				border-top: 2px solid #8361D1;
+				text-align: center;
+				padding: 10px;		
+				margin: 40px auto 0 auto;
+				color: #8361D1;
+				line-height: 1.8;
+				font-size: 0.9rem;
+			}
+
     </style>
 </head>
 <body>
@@ -396,6 +415,11 @@
     <div class="description-box">
         <p id="description-text"></p>
     </div>
+	
+	<div class="footer">
+	<p>© Подарок от Когтеврана на ДРХД 2025<br>
+	Сиропы приготовлены с любовью из фруктов и цветов Когтевранской башни</p>
+	</div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
